@@ -1,0 +1,22 @@
+header {
+   width: 50%;
+}
+
+body {
+   min-height: 100%;
+}
+main {
+   width: 100%;
+   background-color: skyblue;
+}
+
+h1 {
+   border: 2px dashed red;
+   font-size: 3rem;
+   padding: 0.5em;
+}
+
+p {
+   font-size: 2rem;
+   width: 40ch;
+}
