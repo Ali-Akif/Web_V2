@@ -5,41 +5,68 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <style>
-      p {
-         font-size: 32px;
-         font-family: Arial;
-         margin-bottom: 25px;
-      }
-      input {
-         background-color: rgb(242, 242, 242);
-         border: none;
-         padding: 15px 20px;
-         width: 300px;
-         display: block;
-         margin-bottom: 10px;
+      div {
+         box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+         display: inline-block;
+         margin-right: 15px;
       }
 
-      .destination-box {
-         margin-bottom: 35px;
+      p {
+         font-family: Arial;
+         margin-top: 0;
+         margin-bottom: 0;
+      }
+
+      img {
+         width: 200px;
+         height: 200px;
+         object-fit: cover;
+         margin-bottom: 12px;
+      }
+
+      .name {
+         font-size: 18px;
+         font-weight: bold;
+         margin-left: 8px;
+         margin-bottom: 4px;
+      }
+
+      .mutual-friends {
+         color: rgb(100, 100, 100);
+         margin-left: 8px;
+         margin-bottom: 12px;
       }
 
       button {
+         background-color: rgb(24, 119, 242);
+         color: white;
          border: none;
-         padding: 15px 20px;
-         margin-right: 16px;
-      }
-
-      .now {
-         background-color: black;
-         color: rgb(242, 242, 242);
+         padding: 10px 20px;
+         border-radius: 4px;
+         font-size: 16px;
+         margin-left: 8px;
+         margin-bottom: 10px;
       }
    </style>
 </head>
 <body>
-   <p>Request a ride now</p>
-   <input type="text" placeholder="Enter pickup location">
-   <input class="destination-box" type="text" placeholder="Enter destination">
-   <button class="now">Request now</button>
-   <button class="later">Schedule for later</button>
+   <div>
+      <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
+      <p class="name">Oliver</p>
+      <p class="mutual-friends">2 mutual friends</p>
+      <button>Add Friend</button>
+   </div>
+   <div>
+      <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
+      <p class="name">Oliver</p>
+      <p class="mutual-friends">2 mutual friends</p>
+      <button>Add Friend</button>
+   </div>
+   <div>
+      <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
+      <p class="name">Oliver</p>
+      <p class="mutual-friends">2 mutual friends</p>
+      <button>Add Friend</button>
+   </div>
 </body>
 </html>
