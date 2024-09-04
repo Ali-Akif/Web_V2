@@ -5,43 +5,96 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <style>
-      div {
-         text-align: center;
+      p {
+         font-family: Arial;
+         margin-top: 0;
+         margin-bottom: 0;
       }
-      img {
+
+      .container {
          width: 200px;
-         margin: 10px;
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+         display: inline-block;
+         vertical-align: top;
+         margin-right: 15px;
       }
-      input {
-         border: none;
-         padding: 12px 16px;
-         font-size: 16px;
-         width: 500px;
-         border-radius: 30px;
-         box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-         margin-bottom: 30px;
+      .pic {
+         width: 200px;
+         height: 200px;
+         object-fit: cover;
+         margin-bottom: 12px;
       }
-      .google-button,
+
+      .name {
+         font-size: 18px;
+         font-weight: bold;
+         margin-left: 8px;
+         margin-bottom: 5px;
+      }
+
+      .mutual-row {
+         margin-left: 8px;
+         margin-bottom: 10px;
+      }
+
+      .profile {
+         height: 28px;
+         width: 28px;
+         object-fit: cover;
+         border-radius: 14px;
+         vertical-align: middle;
+         margin-right: 4px;
+      }
+
+      .mutual-connections {
+         display: inline-block;
+         vertical-align: middle;
+         color: rgb(100, 100, 100);
+      }
+
       button {
-         background-color: rgb(245, 245, 245);
+         background-color: rgb(24, 119, 242);
+         color: white;
          border: none;
-         font-size: 15px;
-         padding: 12px 20px;
-         margin-right: 10px;
-         font-style: Arial;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         padding-left: 20px;
+         padding-right: 20px;
+         border-radius: 4px;
+         font-size: 16px;
+         margin-left: 8px;
+         margin-bottom: 10px;  
       }
    </style>
 </head>
-<div>
-   <img src="img/google-logo.png" alt="">
-</div>
-<div>
-   <input type="text" placeholder="Search Google or type a URL">
-</div>
-<div>
-   <button class="google-button">Google Search</button>
-   <button>I'm Feeling Lucky</button>
 </div>
 <body>
+   <div class="container">
+      <img class="pic" src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
+      <p class="name">Oliver</p>
+      <div class="mutual-row">
+         <img class="profile" src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg">
+         <p class="mutual-connections">2 mutual friends</p>
+      </div>
+      <button>Add Friend</button>
+   </div>
+   <div class="container">
+      <img class="pic" src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
+      <p class="name">Oliver</p>
+      <div class="mutual-row">
+         <img class="profile" src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg">
+         <p class="mutual-connections">2 mutual friends</p>
+      </div>
+      <button>Add Friend</button>
+   </div>
+   <div class="container">
+      <img class="pic" src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
+      <p class="name">Oliver</p>
+      <div class="mutual-row">
+         <img class="profile" src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg">
+         <p class="mutual-connections">2 mutual friends</p>
+      </div>
+      <button>Add Friend</button>
+   </div>
 </body>
 </html>
