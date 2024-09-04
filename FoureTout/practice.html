@@ -5,41 +5,41 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <style>
+      p {
+         font-size: 32px;
+         font-family: Arial;
+         margin-bottom: 25px;
+      }
       input {
-         border: 1px solid rgb(200, 200, 200);
-         padding: 12px 16px;
-         font-size: 16px;
-         border-radius: 8px;
-         margin-bottom: 12px;
-      }
-
-      .first-name,
-      .last-name {
-         width: 148px;
-      }
-
-      .email {
+         background-color: rgb(242, 242, 242);
+         border: none;
+         padding: 15px 20px;
+         width: 300px;
          display: block;
-         width: 335px;
+         margin-bottom: 10px;
+      }
+
+      .destination-box {
+         margin-bottom: 35px;
       }
 
       button {
-         background-color: rgb(47, 127, 231);
-         color: white;
          border: none;
-         width: 370px;
-         padding-top: 14px;
-         padding-bottom: 14px;
-         font-size: 18px;
-         font-weight: bold;
-         border-radius: 8px;
+         padding: 15px 20px;
+         margin-right: 16px;
+      }
+
+      .now {
+         background-color: black;
+         color: rgb(242, 242, 242);
       }
    </style>
 </head>
 <body>
-   <input class="first-name" type="text" placeholder="First name">
-   <input class="last-name" type="text" placeholder="Last name">
-   <input class="email" type="text" placeholder="Email">
-   <button>Sign Up</button>
+   <p>Request a ride now</p>
+   <input type="text" placeholder="Enter pickup location">
+   <input class="destination-box" type="text" placeholder="Enter destination">
+   <button class="now">Request now</button>
+   <button class="later">Schedule for later</button>
 </body>
 </html>
