@@ -9,36 +9,51 @@
          margin: 0;
          padding: 0;
          box-sizing: border-box;
+         font-family: Arial;
+      }
+
+      p {
+         font-size: 18px;
+      }
+
+      button {
+         background-color: rgb(49, 109, 245);
+         color: white;
+         padding: 3px 10px;
+         border-radius: 20px;
+         border: none;
+         font-size: 14px;
+         font-weight: bold;
       }
 
       .container {
+         border: 1px solid rgb(200, 200, 200);
+         border-radius: 6px;
+         margin: 50px;
+         width: 300px;
+      }
+
+      .row {
          display: flex;
-         border: 1px solid lightgrey;
-         margin: 15px;
+         justify-content: space-between;
+         padding: 6px 12px;
       }
    </style>
 </head>
 <body>
    <div class="container">
-      <div style="background-color: lightblue;
-                  width: 200px;">200px</div>
-      <div style="background-color: lightcoral;
-                  width: 75px;">75px</div>
-   </div>
-
-   
-   <div class="container">
-      <div style="background-color: lightblue;
-                  width: 50px;">50px</div>
-      <div style="background-color: lightcoral;
-                  flex: 1;">item 2</div>
-      <div style="background-color: lightblue;
-      width: 75px;">item 3</div>
-   </div>
-
-   <div class="container" style="height: 50px; justify-content: space-between; align-items: center;">
-      <div style="background-color: lightcoral;">item 1</div>
-      <div style="background-color: lightblue;">item 2</div>
+      <div class="row">
+         <p>Home</p>
+         <button>14</button>
+      </div>
+      <div class="row">
+         <p>Notifications</p>
+         <button>3</button>
+      </div>
+      <div class="row">
+         <p>Messages</p>
+         <button>5</button>
+      </div>
    </div>
 </body>
 </html>
