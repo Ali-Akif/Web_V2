@@ -11,94 +11,34 @@
          box-sizing: border-box;
       }
 
-      body {
-         display: grid;
-         grid-template-columns: 200px 200px 200px;
-         column-gap: 20px;
-         margin-top: 20px;
-         margin-left: 20px;
-      }
-      .profile {
-         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-      }
-
-      .profile-picture {
-         width: 200px;
-         height: 200px;
-         object-fit: cover;
-         margin-bottom: 12px;
-      }
-
-      .name {
-         font-size: 18px;
-         font-weight: bold;
-         margin-left: 8px;
-         margin-bottom: 5px;
-      }
-
-      .mutual-image {
-         width: 28px;
-         height: 28px;
-         object-fit: cover;
-         border-radius: 14px;
-      }
-      .mutual-connection {
-         color: rgb(100, 100, 100);
-      }
-
-      .mutual-row {
-         display: grid;
-         grid-template-columns: 35px 1fr;
-         align-items: center;
-         margin-left: 8px;
-         margin-bottom: 10px;
-      }
-
-      button {
-         background-color: rgb(24, 119, 242);
-         color: white;
-         border: none;
-         padding-top: 10px;
-         padding-bottom: 10px;
-         padding-left: 20px;
-         padding-right: 20px;
-         border-radius: 4px;
-         font-size: 16px;
-         margin-left: 8px;
-         margin-bottom: 10px;
+      .container {
+         display: flex;
+         border: 1px solid lightgrey;
+         margin: 15px;
       }
    </style>
 </head>
-</div>
 <body>
-   <div class="profile">
-      <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" class="profile-picture">
-      <p class="name">Oliver</p>
-      <div class="mutual-row">
-         <img class="mutual-image" src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg">
-         <p class="mutual-connection">2 mutual friends</p>
-      </div>
-      <button>Add Friend</button>
+   <div class="container">
+      <div style="background-color: lightblue;
+                  width: 200px;">200px</div>
+      <div style="background-color: lightcoral;
+                  width: 75px;">75px</div>
    </div>
+
    
-   <div class="profile">
-      <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" class="profile-picture">
-      <p class="name">Oliver</p>
-      <div class="mutual-row">
-         <img class="mutual-image" src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg">
-         <p class="mutual-connection">2 mutual friends</p>
-      </div>
-      <button>Add Friend</button>
+   <div class="container">
+      <div style="background-color: lightblue;
+                  width: 50px;">50px</div>
+      <div style="background-color: lightcoral;
+                  flex: 1;">item 2</div>
+      <div style="background-color: lightblue;
+      width: 75px;">item 3</div>
    </div>
-   
-   <div class="profile">
-      <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" class="profile-picture">
-      <p class="name">Oliver</p>
-      <div class="mutual-row">
-         <img class="mutual-image" src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg">
-         <p class="mutual-connection">2 mutual friends</p>
-      </div>
-      <button>Add Friend</button>
+
+   <div class="container" style="height: 50px; justify-content: space-between; align-items: center;">
+      <div style="background-color: lightcoral;">item 1</div>
+      <div style="background-color: lightblue;">item 2</div>
    </div>
 </body>
 </html>
