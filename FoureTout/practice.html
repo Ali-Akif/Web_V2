@@ -5,45 +5,90 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <style>
-      div {
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
          font-family: Arial;
       }
-      .header {
+
+      .profile-container {
          display: flex;
-         background-color: rgb(120, 82, 178);
-         color: white;
-         justify-content: space-between;
          align-items: center;
-         padding: 0 15px;
+         justify-content: space-between;
+         width: 350px;
       }
 
-      .home-link {
+      img {
+         width: 50px;
+         height: 50px;
+         object-fit: cover;
+         border-radius: 50px;
+         margin: 0 13px;
+      }
+
+      .left {
+         display: flex;
+         align-items: center;
+      }
+      .infos {
+         line-height: 20px;
+      }
+      .name {
          font-weight: bold;
       }
+      .__recommendation {
+         font-size: 12px;
+      }
 
-      .text-box {
-         width: 500px;
-         border: none;
-         margin: 12px 0;
-         height: 30px;
-         border-radius: 15px;
-         padding-left: 20px;
+      .des {
+         color: grey;
       }
 
       button {
-         background-color: inherit;
+         background-color: rgb(99, 182, 255);
+         border: none;
          color: white;
+         padding: 10px 15px;
+         border-radius: 6px;
+         font-weight: bold;
          font-size: 16px;
-         border: 1px solid white;
-         padding: 8px 15px;
+         cursor: pointer;
       }
    </style>
 </head>
 <body>
-   <div class="header">
-      <div class="home-link">Home</div>
-      <input class="text-box" type="text" placeholder="Search">
-      <button>Download</button>
+   <div class="profile-container">
+      <div class="left">
+         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
+         <div class="infos">
+            <p class="name">oliver</p>
+            <p class="des  __description">the cat</p>
+            <p class="des __recommendation">Popular</p>
+         </div>
+      </div>
+      <button>Follow</button>
+   </div>
+   <div class="profile-container">
+      <div class="left">
+         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
+         <div class="infos">
+            <p class="name">oliver</p>
+            <p class="des  __description">the cat</p>
+            <p class="des __recommendation">Popular</p>
+         </div>
+      </div>
+      <button>Follow</button>
+   </div> <div class="profile-container">
+      <div class="left">
+         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
+         <div class="infos">
+            <p class="name">oliver</p>
+            <p class="des  __description">the cat</p>
+            <p class="des __recommendation">Popular</p>
+         </div>
+      </div>
+      <button>Follow</button>
    </div>
 </body>
 </html>
