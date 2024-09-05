@@ -5,55 +5,45 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <style>
-      * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
+      div {
          font-family: Arial;
       }
-
-      p {
-         font-size: 18px;
+      .header {
+         display: flex;
+         background-color: rgb(120, 82, 178);
+         color: white;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0 15px;
       }
 
-      button {
-         background-color: rgb(49, 109, 245);
-         color: white;
-         padding: 3px 10px;
-         border-radius: 20px;
-         border: none;
-         font-size: 14px;
+      .home-link {
          font-weight: bold;
       }
 
-      .container {
-         border: 1px solid rgb(200, 200, 200);
-         border-radius: 6px;
-         margin: 50px;
-         width: 300px;
+      .text-box {
+         width: 500px;
+         border: none;
+         margin: 12px 0;
+         height: 30px;
+         border-radius: 15px;
+         padding-left: 20px;
       }
 
-      .row {
-         display: flex;
-         justify-content: space-between;
-         padding: 6px 12px;
+      button {
+         background-color: inherit;
+         color: white;
+         font-size: 16px;
+         border: 1px solid white;
+         padding: 8px 15px;
       }
    </style>
 </head>
 <body>
-   <div class="container">
-      <div class="row">
-         <p>Home</p>
-         <button>14</button>
-      </div>
-      <div class="row">
-         <p>Notifications</p>
-         <button>3</button>
-      </div>
-      <div class="row">
-         <p>Messages</p>
-         <button>5</button>
-      </div>
+   <div class="header">
+      <div class="home-link">Home</div>
+      <input class="text-box" type="text" placeholder="Search">
+      <button>Download</button>
    </div>
 </body>
 </html>
