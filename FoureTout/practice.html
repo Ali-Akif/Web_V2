@@ -8,71 +8,45 @@
       * {
          font-family: Arial;
       }
-      aside {
-         position: fixed;      
-         left: 0;
-         top: 0;
-         bottom: 0;
+      .video {
+         width: 320px;
+         height: 200px;
+         background-color: grey;
+         position: fixed;
+         bottom: 20px;
+         right: 20px;
+      }
+      .close {
          display: flex;
-      }
-      img {
-         width: 55px;
-         height: 55px;
-         object-fit: cover;
-         border-radius: 30px;
-         margin-bottom: 8px;
-      }
-      .icons {
-         background-color:#1A1C1F;
-         display: flex;
-         flex-direction: column;
-         padding: 8px 12px;
-      }
-      .server {
-         background-color: #292A2E;
-         padding: 8px 16px;
-         width: 150px;
-
-      }
-      .channel {
-         display: flex;
-         justify-content: space-between;
          align-items: center;
-         height: 20px;
-      }
-      .channel p {
+         justify-content: center;
+         position: absolute;
+         top: -18px;
+         left: -18px;
+         background-color: black;
+         font-size: 20px;
          color: white;
-         font-weight: bold;
-         font-size: 14px;
+         width: 45px;
+         height: 45px;
+         border-radius: 50px;
       }
-      #plus {
-         color: #868686;
-         font-size: 24px;
-         font-weight: normal;
-      }
-      .channel__child p {
-         color: #868686;
+
+      .time {
+         position: absolute;
+         bottom: 10px;
+         right: 10px;
+         background-color: black;
+         color: white;
+         padding: 5px 7px;
       }
    </style>
 </head>
 <body>
-   <aside>
-      <div class="icons">
-         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" >
-         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" >
-         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" >
+   <div class="video">
+      <div class="close">
+         <span>X</span>
       </div>
-      <div class="server">
-         <div class="channel">
-            <p>INFO</p>
-            <p id="plus">+</p>
-         </div>
-         <div class="channel__child">
-            <p># new-videos</p>
-            <p># updates</p>
-            <p># faq</p>
-         </div>
-      </div>
-   </aside>
+      <div class="time">0:29</div>
+   </div>
 </body>
 </html>
