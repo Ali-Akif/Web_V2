@@ -14,46 +14,72 @@
 
       .container {
          display: flex;
+         flex-direction: column;
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.253);
+         width: 400px;
+         margin: 20px;
+         padding: 10px 15px;
+         border-radius: 5px;
       }
+      .label {
+         font-size: 14px;
+         color: grey;
+         margin-bottom: 20px;
+      }
+      img {
+         width: 50px;
+         height: 50px;
+         object-fit: cover;
+         border-radius: 25px;
+         margin-right: 10px;
 
-      .item1 {
-         background-color: lightcoral;
-         width: 100px;
-         height: 50px;
       }
-      .item2 {
-         background-color: lightblue;
-         width: 200px;
-         height: 50px;
+      .row {
          display: flex;
-         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 20px;
       }
       .right {
-         align-self: center;
-      }
-
-      p {
-         background-color: black;
-         color: white;
+         flex: 1;
       }
 
       .row1 {
-         background-color: inherit;
-         color: black;
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 3px;
+         align-items: center;
+      }
+      .name {
+         font-size: 18px;
+         font-weight: bold;
+      }
+      .time {
+         font-size: 14px;
+         color: rgb(120, 120, 120);
+      }
+      .subject {
+         font-weight: bold;
+         margin-bottom: 5px;
+      }
+      .message {
+         color: rgb(120, 120, 120);
+         font-size: 14px;
       }
    </style>
 </head>
 <body>
    <div class="container">
-      <div class="item1">
-
-      </div>
-      <div class="item2">
-         <div class="left">
-            <p class="row1">row1</p>
-            <p>row2</p>
+      <p class="label">ALL INBOXES</p>
+      <div class="row">
+         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
+         <div class="right">
+            <div class="row1">
+               <p class="name">Chewy Promotions</p>
+               <p class="time">4:58 PM</p>
+            </div>
+            <p class="subject">Biggest sales of the year!</p>
+            <p class="message">Hey there! We're writing to tell you about our...</p>
          </div>
-         <p class="right">row2</p>
       </div>
    </div>
 </body>
