@@ -12,83 +12,36 @@
          font-family: Arial;
       }
 
-      .profile-container {
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-         width: 350px;
-      }
-
-      img {
-         width: 50px;
-         height: 50px;
-         object-fit: cover;
-         border-radius: 50px;
-         margin: 0 13px;
-      }
-
-      .left {
-         display: flex;
-         align-items: center;
-      }
-      .infos {
-         line-height: 20px;
-      }
-      .name {
-         font-weight: bold;
-      }
-      .__recommendation {
-         font-size: 12px;
-      }
-
-      .des {
-         color: grey;
-      }
-
-      button {
-         background-color: rgb(99, 182, 255);
-         border: none;
-         color: white;
-         padding: 10px 15px;
-         border-radius: 6px;
-         font-weight: bold;
-         font-size: 16px;
-         cursor: pointer;
-      }
+     .container {
+      display: flex;
+     }
+     .item1 {
+      width: 100px;
+      background-color: lightcoral;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+     .item2 {
+      width: 200px;
+      height: 50px;
+      background-color: lightblue;
+     }
+     p {
+      color: white;
+      background-color: black;
+     }
    </style>
 </head>
 <body>
-   <div class="profile-container">
-      <div class="left">
-         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
-         <div class="infos">
-            <p class="name">oliver</p>
-            <p class="des  __description">the cat</p>
-            <p class="des __recommendation">Popular</p>
-         </div>
+   <div class="container">
+      <div class="item1">
+         <p>item1</p>
       </div>
-      <button>Follow</button>
-   </div>
-   <div class="profile-container">
-      <div class="left">
-         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
-         <div class="infos">
-            <p class="name">oliver</p>
-            <p class="des  __description">the cat</p>
-            <p class="des __recommendation">Popular</p>
-         </div>
+      <div class="item2">
+
       </div>
-      <button>Follow</button>
-   </div> <div class="profile-container">
-      <div class="left">
-         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
-         <div class="infos">
-            <p class="name">oliver</p>
-            <p class="des  __description">the cat</p>
-            <p class="des __recommendation">Popular</p>
-         </div>
-      </div>
-      <button>Follow</button>
    </div>
 </body>
 </html>
