@@ -5,61 +5,74 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <style>
-      .container {
-         display: flex;
-         width: 100%;
-         position: fixed;
-         top: 0;
+      * {
+         font-family: Arial;
+      }
+      aside {
+         position: fixed;      
          left: 0;
-         right: 0;
-         justify-content: space-between;
+         top: 0;
+         bottom: 0;
+         display: flex;
       }
-      .left img {
-         width: 40px;
-         height: 40px;
+      img {
+         width: 55px;
+         height: 55px;
          object-fit: cover;
-         border-radius: 25px;
-         margin-right: 10px;
+         border-radius: 30px;
+         margin-bottom: 8px;
       }
-      .left {
+      .icons {
+         background-color:#1A1C1F;
          display: flex;
-         align-items: center;
-         margin-left: 50px;
+         flex-direction: column;
+         padding: 8px 12px;
       }
-      .left p {
-         font-size: 18px;
-      }
-      .right {
-         display: flex;
-         margin-right: 50px;
-         align-items: center;
-      }
-      .right div {
-         margin-left: 8px;
-         padding: 6px 12px;
-         border-radius: 5px;
-      }
+      .server {
+         background-color: #292A2E;
+         padding: 8px 16px;
+         width: 150px;
 
-      .add_friend {
-         background-color: rgb(80, 140, 230);
+      }
+      .channel {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         height: 20px;
+      }
+      .channel p {
          color: white;
+         font-weight: bold;
+         font-size: 14px;
       }
-      .message {
-         background-color: rgb(208, 208, 208);
+      #plus {
+         color: #868686;
+         font-size: 24px;
+         font-weight: normal;
       }
-
+      .channel__child p {
+         color: #868686;
+      }
    </style>
 </head>
 <body>
-   <div class="container">
-      <div class="left">
-         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" alt="">
-         <p>Oliver Cat</p>
+   <aside>
+      <div class="icons">
+         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" >
+         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" >
+         <img src="img/How+Much+Does+It+Cost+to+Have+a+Cat+_+ASPCA+Pet+Insurance+_+black+cat+with+yellow+eyes+peeking+out-min.jpg" >
       </div>
-      <div class="right">
-         <div class="add_friend">Add Friend</div>
-         <div class="message">Message</div>
+      <div class="server">
+         <div class="channel">
+            <p>INFO</p>
+            <p id="plus">+</p>
+         </div>
+         <div class="channel__child">
+            <p># new-videos</p>
+            <p># updates</p>
+            <p># faq</p>
+         </div>
       </div>
-   </div>
+   </aside>
 </body>
 </html>
