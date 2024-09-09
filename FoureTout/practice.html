@@ -12,35 +12,48 @@
          font-family: Arial;
       }
 
-     .container {
-      display: flex;
-     }
-     .item1 {
-      width: 100px;
-      background-color: lightcoral;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-     }
-     .item2 {
-      width: 200px;
-      height: 50px;
-      background-color: lightblue;
-     }
-     p {
-      color: white;
-      background-color: black;
-     }
+      .container {
+         display: flex;
+      }
+
+      .item1 {
+         background-color: lightcoral;
+         width: 100px;
+         height: 50px;
+      }
+      .item2 {
+         background-color: lightblue;
+         width: 200px;
+         height: 50px;
+         display: flex;
+         justify-content: space-between;
+      }
+      .right {
+         align-self: center;
+      }
+
+      p {
+         background-color: black;
+         color: white;
+      }
+
+      .row1 {
+         background-color: inherit;
+         color: black;
+      }
    </style>
 </head>
 <body>
    <div class="container">
       <div class="item1">
-         <p>item1</p>
+
       </div>
       <div class="item2">
-
+         <div class="left">
+            <p class="row1">row1</p>
+            <p>row2</p>
+         </div>
+         <p class="right">row2</p>
       </div>
    </div>
 </body>
