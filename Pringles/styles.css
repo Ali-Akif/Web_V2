@@ -136,5 +136,56 @@ main {
    }
    .pringoals img {
       margin-bottom: -5px;
+      border-bottom: 1px solid rgba(103, 103, 103, 0.24);
+   }
+
+   .conditions_generales {
+      background-color: #00BDF2;
+      color: white;
+      padding: 20px 15px;
+   }
+   .conditions_generales p {
+      margin: 5px 0;
+   }
+   .conditions_generales a {
+      color: white;
+      font-family: "Rooney";
+      font-size: 12px;
+   }
+
+   .produits {
+      margin-top: -5px;
+      text-align: center;
+      padding: 30px 15px;
+      background-color: #009E80;
+      color: white;
+   }
+
+   .produits h2 {
+      text-transform: uppercase;
+      line-height: 100%;
+      margin: 12px 0;
+      font-size: 5vh;
+   }
+
+   .produits_title {
+      font-family: 'Pinup Pringles';
+      font-size: 2.5vh;
+   }
+
+   .produits_description {
+      font-family: 'Rooney';
+      font-size: 2vh;
+      line-height: 110%;
+      margin-bottom: 25px;
+   }
+
+   .produits a {
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      background-color: #E40426;
+      padding: 10px 24px;
+      border-radius: 5px;
    }
 }
