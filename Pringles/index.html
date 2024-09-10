@@ -8,6 +8,7 @@
 </head>
 <body>
    <header>
+      <input type="checkbox" id="menu-toggle">
       <div class="header_container">
          <div class="left">
             <img src="img_mobile/header/Pringles_logo.png" alt="pringles logo">
@@ -17,10 +18,24 @@
             <img src="img_mobile/header/Login.svg" alt="login">
             <img src="img_mobile/header/flag.png" alt="language selector, currently french">
             <div class="burger">
-               <img src="img_mobile/header/menu_45dp_E8EAED_FILL0_wght400_GRAD0_opsz48.png" alt="menu">
+               <label for="menu-toggle">
+                  <img src="img_mobile/header/menu_45dp_E8EAED_FILL0_wght400_GRAD0_opsz48.png" alt="menu">
+               </label>
+               <div class="close">
+                  <img src="img_mobile/header/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">
+               </div>
             </div>
          </div>
       </div>
+      <nav class="overlay">
+         <ul>
+            <li><a href="">à propos de pringles</a></li>
+            <li><a href="">offres</a></li>
+            <li><a href="">à toi de jouer !</a></li>
+            <li><a href="">produits</a></li>
+            <li class="last_link"><a href="" >nous contacter</a></li>
+         </ul>
+      </nav>
    </header>
    <main>
       <section class="poptopia">
@@ -55,7 +70,43 @@
          <h2>Nouvelle boîte, même goût renversant</h2>
          <p class="produits_description">Des notes relevées de Salt & Vinegar aux notes acidulées de Sour Cream & Onion, à toi de choisir la saveur Pringles qui correspond à tes envies.</p>
          <a href="https://www.pringles.com/fr/products.html">ESSAIE DE NOUVELLES SAVEURS</a>
+         <img src="img_mobile/main/lady.webp" alt="pringles lady">
+      </section>
+      <section class="pringles_histoire">
+         <h2>L’histoire de Pringles</h2>
+         <p>Évade-toi avec Pringles. Des chips qui stimulent les papilles... et les neurones ! Un paraboloïde hyperbolique à la forme et au goût parfaits, qui s’empile avec précision dans sa boîte. Créé avec une bonne dose d’humour et pour l’amour du fun. Un soupçon de sérieux et une tonne de créativité.</p>
+         <a href="https://www.pringles.com/fr/brand.html">découvrir nos saveurs</a>
+         <img src="img_mobile/main/lady_pringles.avif" alt="">
       </section>
    </main>
+   <footer>
+      <nav>
+         <ul class="navigation">
+            <li><a href="https://www.pringles.com/fr/products.html">Produits</a></li>
+            <li><a href="https://www.pringles.com/fr/contact-us.html">Nous contacter</a></li>
+            <li><a href="https://www.pringles.com/fr/conditions-d-utilisation.html">Conditions d'utilisation</a></li>
+            <li><a href="https://www.kelloggs.ie/en_IE/privacy-notice.html">Politique de confidentialité</a></li>
+            <li><a href="https://www.pringles.com/fr/tsandcs.html">Conditions générales des offres</a></li>
+            <li><a href="https://www.pringles.com/fr/my-account.html">Mon compte</a></li>
+            <li><a href="https://www.pringles.com/fr/sitemap.html">Plan du site</a></li>
+            <li><a href="#">Pays/Région</a></li>
+            <li><a href="#">Préférences de cookies</a></li>
+            <li><a href="https://www.kelloggcompany.com/en_US/about-kellogg-company/Ethics-and-Culture.html">Ethics Line</a></li>
+         </ul>
+         <div class="social_links">
+            <ul >
+               <li><a href="https://www.facebook.com/PringlesFR/"><img src="img_mobile/footer/fb.svg" alt="facebook"></a></li>
+               <li><a href="https://twitter.com/Pringles_FR"><img src="img_mobile/footer/twitter.svg" alt="twitter"></a></li>
+               <li><a href="https://www.instagram.com/pringles_fr/"><img src="img_mobile/footer/insta.svg" alt="instagram"></a></li>
+               <li><a href="https://www.tiktok.com/@pringles_fr"><img src="img_mobile/footer/tiktok.svg" alt="tiktok"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCzwrjVlnMRynB80igUyAioQ"><img src="img_mobile/footer/yt.svg" alt="youtube"></a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="copyright">
+         <p> ®, TM, © 2024 Kellogg’s Europe Trading Limited</p>
+         <p>Kellogg’s P.A., RCS 682 000 831</p>
+      </div>
+   </footer>
 </body>
 </html>

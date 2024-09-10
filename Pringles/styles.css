@@ -7,6 +7,9 @@
    font-family: "Rooney";
    src: url(fonts/andesbold.woff2) format("woff2");
 }
+::-webkit-scrollbar {
+   display: none;
+}
 
 * {
    margin: 0;
@@ -44,12 +47,49 @@ a {
    font-family: "Pinup Pringles";
    font-size: 4vw;
 }
+
+.overlay {
+   visibility: hidden;
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(24, 24, 24, 0.956);
+   z-index: 1;
+   
+   ul {
+      padding: 150px 15px;
+   }
+
+   ul li {
+      list-style: none;
+      border-bottom: 1.5px solid rgba(255, 255, 255, 0.64);
+      padding: 15px 0;
+   }
+
+   ul a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 4.8vw;
+   }
+   .last_link {
+      border-bottom: none;
+   }
+}
+
 header {
    position: fixed;
    top: 0;
    left: 0;
    right: 0;
 
+   #menu-toggle {
+      display: none;
+   }
+
+   
    .header_container {
       background-color: #EA002A;
       height: 60px;
@@ -60,8 +100,11 @@ header {
       padding-top: 13px;
    }
    .left img {
+      position: relative;
       width: 52px;
+      z-index: 2;
    }
+
    .right img {
       width: 27px;
       height: 27px;
@@ -72,11 +115,22 @@ header {
       display: flex;
    }
    .burger img {
+      position: relative;
       margin-left: 25px;
       padding: 0;
       margin-top: 0;
       width: 30px;
       height: 34px;
+   }
+
+   .close img {
+      position: absolute;
+      top: 12px;
+      right: 5px;
+      width: 40px;
+      height: 40px;
+      visibility: hidden;
+      z-index: 2;
    }
 }
 
@@ -89,6 +143,7 @@ main {
    }
    .poptopia img {
       width: 100%;
+      margin-bottom: -1px;
    }
    .poptopia_prolongation {
       background-color: #7C1544;
@@ -157,6 +212,8 @@ main {
       margin-top: -5px;
       text-align: center;
       padding: 30px 15px;
+      padding-bottom: 0;
+      margin-bottom: ;
       background-color: #009E80;
       color: white;
    }
@@ -187,5 +244,84 @@ main {
       background-color: #E40426;
       padding: 10px 24px;
       border-radius: 5px;
+      display: inline-block;
+   }
+
+   .produits img {
+      margin-bottom: -4px;
+   }
+
+   .pringles_histoire {
+      text-align: center;
+      margin-top: 30px;
+   }
+
+   .pringles_histoire h2 {
+      color: #E40426;
+      line-height: 100%;
+      text-transform: uppercase;
+      font-size: 30px;
+   }
+
+   .pringles_histoire p {
+      padding: 0 15px;
+      color: #bebebe;
+   }
+
+   .pringles_histoire a {
+      text-decoration: none;
+      color: white;
+      background-color: #E40426;
+      padding: 10px 17px;
+      display: inline-block;
+      margin-top: 15px;
+      border-radius: 5px;
+   }
+
+   .pringles_histoire img {
+      margin-bottom: -4px;
+   }
+}
+
+footer {
+   background-color: #E40426;
+   padding: 30px 15px;
+   padding-bottom: 40px;
+
+   .navigation li {
+      list-style: none;
+      margin: 10px 0;
+      padding-bottom: 10px;
+      border-bottom: 1.5px solid rgba(255, 255, 255, 0.282);
+   }
+
+   .navigation a {
+      text-decoration: none;
+      color: white;
+   }
+
+   .navigation {
+      margin-bottom: 35px;
+   }
+
+   .social_links ul {
+      display: flex;
+   }
+
+   .social_links  ul li {
+      list-style: none;
+   }
+
+   .social_links ul img {
+      width: 30px;
+      height: 30px;
+      margin-right: 1em;
+      margin-bottom: 20px;
+   }
+
+   .copyright p {
+      color: white;
+      font-size: 2.4vw;
+      margin-bottom: 10px;
    }
 }
