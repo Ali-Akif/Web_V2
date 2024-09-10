@@ -1,0 +1,140 @@
+@font-face {
+   font-family: "Pinup Pringles";
+   src: url("fonts/Pinup.woff2") format("woff2");
+}
+
+@font-face {
+   font-family: "Rooney";
+   src: url(fonts/andesbold.woff2) format("woff2");
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+img {
+   width: 100%;
+}
+
+p {
+   font-size: 9pt;
+   font-weight: 800;
+   font-family: "Rooney";
+}
+
+h5 {
+   font-family: "Pinup Pringles";
+   font-size: 15px;
+}
+h2 {
+   font-size: 11vw;
+   margin: 0 auto 3vw;
+   font-family: "Pinup Pringles";
+   line-height: 1.3;
+}
+
+h3 {
+   font-family: "Rooney";
+   font-size: 4vw;
+}
+
+a {
+   font-family: "Pinup Pringles";
+   font-size: 4vw;
+}
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+
+   .header_container {
+      background-color: #EA002A;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      padding-top: 13px;
+   }
+   .left img {
+      width: 52px;
+   }
+   .right img {
+      width: 27px;
+      height: 27px;
+      margin-top: 5px;
+      margin-left: 7px;
+   }
+   .right {
+      display: flex;
+   }
+   .burger img {
+      margin-left: 25px;
+      padding: 0;
+      margin-top: 0;
+      width: 30px;
+      height: 34px;
+   }
+}
+
+main {
+   margin-top: 60px;
+
+   .poptopia {
+      display: flex;
+      flex-direction: column;
+   }
+   .poptopia img {
+      width: 100%;
+   }
+   .poptopia_prolongation {
+      background-color: #7C1544;
+      color: white;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+
+   .poptopia_prolongation a,
+   .pringoals a {
+      text-decoration: none;
+      color: #EA002A;
+      background-color: white;
+      border-radius: 5px;
+      padding: 7px 14px;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 10px;
+   }
+
+   .pringoals {
+      background-color: #E40426;
+      color: white;
+   }
+   .pringoals_text h2 {
+      font-size: 35px;
+      line-height: 100%;
+   }
+   
+   .pringoals_text {
+      padding: 20px 15px;
+      padding-top: 50px;
+   }
+   .pringoals_text h5 {
+      margin-bottom: 15px;
+   }
+
+   .pringoals_text p {
+      margin: 10px 0;
+   }
+   .pringoals_text a {
+      padding: 8px 50px ;
+   }
+   .pringoals img {
+      margin-bottom: -5px;
+   }
+}
