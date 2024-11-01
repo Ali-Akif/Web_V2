@@ -160,12 +160,36 @@ main {
       }
 
       td {
-         color:hsl(14, 45%, 36%) ;
+         color:hsl(14, 100%, 10%) ;
          font-weight: bold;
       }
       
       .no_line {
          border: none;
       }
+   }
+}
+
+
+@media screen and (min-width: 1200px) { 
+   img {
+      display: inline-block;
+      margin: 5% 7%;
+      border-radius: 15px;
+      max-width: 86%;
+   }
+
+   body {
+      background-color:hsl(14, 41%, 90%);
+   }
+   .container {
+      background-color: white;
+      width: 50%;
+      margin: 50px auto;
+      border-radius: 15px;
+   }
+
+   .nutrition {
+      padding-bottom: 10px;
    }
 }
